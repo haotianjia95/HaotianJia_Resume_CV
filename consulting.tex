@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.8]{fdsymbol}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small\justifying{{#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemX}[2]{
+  \item\small{
+    \justifying\textbf{#1}\justifying{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemStar}[2]{
+  \item[]\small{
+    \textbf{#1}{#2 \vspace{-15pt}}
+  }
+}
+
+\newcommand{\SkillItemX}[2]{
+  \item[]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\EduItem}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\ExpItem}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-17.5pt}
+}
+
+\newcommand{\ExpItemSub}[2]{
+    \item \begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\small{~\textit{#2}}
+    \end{tabular*}\vspace{-2.5pt}
+}
+
+
+
+
+
+\newcommand{\resumeSkillItemX}[2]{
+  \vspace{-1pt} \item[]\begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1: }{#2}\\
+  \end{tabular*}\vspace{-20pt}}
+  
+\renewcommand{\labelitemi}{$\medblacksquare$}
+\renewcommand{\labelitemii}{$\medblacksquare$}
+\renewcommand{\labelitemiii}{$\bullet$}
+
+\newcommand{\EduList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\EduListEnd}{\end{itemize}}
+
+\newcommand{\ExpList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\ExpListEnd}{\end{itemize}}
+
+\newcommand{\ExpListSub}{\begin{itemize}[leftmargin=0.35in]}
+\newcommand{\ExpListSubEnd}{\end{itemize}\vspace{-10pt}}
+
+\newcommand{\ProjList}{\begin{itemize}[leftmargin=0.25in]}
+\newcommand{\ProjListEnd}{\end{itemize}}
+
+\newcommand{\SkillsList}{\begin{itemize}[leftmargin=0.05in]}
+\newcommand{\SkillsListEnd}{\end{itemize}}
+
+\newcommand{\ItemList}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\ItemListEnd}{\end{itemize}\vspace{-2.5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    {\Huge \scshape HAOTIAN JIA} \\ \vspace{2.5pt}
+    Ph.D. Candidate, Department of Mechanical Engineering, Tufts University\\ \vspace{5pt}
+    \small \href{tel:18577565263}{Tel: +1 857 756 5263} ~~~~ 
+    {\href{mailto:haotian.jia@tufts.edu}{Email: haotian.jia@tufts.edu}} ~~~~ 
+    \href{https://www.linkedin.com/in/haotianjia}{\faLinkedin\ {linkedIn}}  ~~~~ 
+    % \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+    \vspace{-20pt}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \EduList
+    \EduItem
+      {Tufts University}{Medford, MA}
+      {PhD Mechanical Engineering;  GPA: 3.82/4.0}{Sep 2020 -- Present}
+      % \vspace{5pt}\\
+      % \scriptsize
+      % Advisor: Marc Hodes, Professor of Mechanical Engineering.\\\vspace{-5pt}
+      % Co-Advisor: Georgios Karamanis, Research Assistant Professor of Mechanical Engineering.
+      % \normalsize
+      % \vspace{-5pt}
+    \EduItem
+      {Tufts University}{Medford, MA}
+      {MS Mechanical Engineering}{Sep 2018 -- Present}
+    \EduItem
+      {Beijing Forestry University}{Beijing, China}
+      {BS Mechanical Design, Manufacturing, and Automation}{Sep 2014 -- Jun 2018}
+  \EduListEnd
+  \vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\ExpList
+\ExpItem
+{Department of Mechanical Engineering, Tufts University}{Medford, MA}
+{Research Assistant}{Sep 2019 -- Present}
+
+      \ExpListSub
+      \ExpItemSub{Permeability measurement of aerogel}{$-$ funded by NSF award 153060}
+      \ItemList
+      \resumeItem{Designed, constructed, and tested an experimental apparatus for precise measurement of aerogel permeability using CO$_2$ via two independent methods, operating at pressures up to 1850 PSI and temperatures of 50°C.}
+      \resumeItem{Developed a data acquisition and post-processing system using National Instruments LabVIEW and hardware.}   
+      \resumeItem{Utilized analytical math and MATLAB programming to build codes implementing Duhamel's theorem for solving a transient partial differential equation in the $r$-$z$  plane with time-varying boundary conditions.}
+      \ItemListEnd
+     \ExpItemSub{Jet-impingement enhanced0 freeze drying}{$-$ funded by NSF STTR Phase I award 2014881}
+      \ItemList
+      \resumeItem{Optimized Collaborator's (Aerogel Technologies, LLC.) freeze-drying process by designing, constructing, commissioning, and utilizing a first-of-its-kind aerogel drying system demo, resulting in a 75\% reduction in production time.}
+      \resumeItem{Developed dehumidification process for compressed air flow, achieving a dew point as low as -40°C while maintaining a high mass flow rate of up to 12.7 SCFM.}
+      \ItemListEnd
+     \ExpItemSub{Inertial Effects on the Flow Resistance of Axial Groove Heat Pipes}{}
+     \ItemList
+      \resumeItem{Modeled and solved the partial differential equations governing 2-phase flow by employing asymptotic expansion techniques and utilizing MATLAB finite element method solvers.}
+      \ItemListEnd
+      \ExpListSubEnd
+      
+\ExpItem
+{Department of Mathematics, Imperial College London}{London, UK}
+{Research Assistant, Tufts Global Research Assistant Program (GRAP)}{Jun 2022 -- Aug 2022}
+
+      \ExpListSub
+      \ExpItemSub{The Red Lotus Project}{$-$ funded by NSF award 2140033}
+      \ItemList
+      \resumeItem{Presented a series of talks to mathematicians at Imperial College London, promoting interdisciplinary collaboration in the field of surface engineering, with a focus on microfabrication and photochemistry applications.}
+      \resumeItem{Improved the modeling of mass transfer for photo-surfactants seeded flow in a microchannel with a textured surface.}
+      \resumeItem{Designed and fabricated sidewall grooved hydrophobic PDMS microchannel in Tufts Microfab (class 1000 cleanroom).}
+      \ItemListEnd
+      \ExpListSubEnd
+
+\ExpListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\ExpList
+\ExpItem{}{}{}{} 
+\vspace{-25pt}
+  \ProjList
+    \resumeItemX{Web Development}
+      {Developed and currently maintain the research group site (\href{https://sites.tufts.edu/tplab/}{sites.tufts.edu/tplab}) on WordPress.} 
+    \resumeItemX{Solution for Cerebral Palsy Patient to Eat Independently}
+      {Collaborated with the patient and caregivers, designed and fabricated a rotary food supply mechanism LEGO and an Arduino-controlled stepper motor.}
+    % \resumeItemX{Robot Arm Control}
+    %   {Customized a National Instruments myRIO using the LabVIEW FPGA Module to design and compare multiple control methods for a 2-degree-of-freedom planar robot arm.}
+  \ProjListEnd
+\ExpListEnd
+\vspace{-15pt}
+
+%-----------EXPERIENCE-----------------
+\section{Leadership}
+  \ExpList
+      \ExpItem
+  {Association Federation of Beijing Forestry University}{Beijing, China}
+  {Vice Minister of Public Relations Department}{Jul 2015 -- Sep 2016}
+  
+  \ExpListSub
+      \resumeItemStar{}{}
+      \ItemList
+      \resumeItem{Represented University students in various events organized by other universities in the Beijing area.}
+      \resumeItem{Hosted various event involving 1000+ people in Univerisity Hall}
+      \ItemListEnd
+  \ExpListSubEnd
+  
+  \ExpItem
+  {LvFangCheng Electroacoustic Club, Art Troupe of Beijing Forestry University}{Beijing, China}
+  {President}{Nov 2016 -- Nov 2017}
+  
+  \ExpListSub
+      \resumeItemStar{}{}
+      \ItemList
+      \resumeItem{Coordinated with performance venues, organized several music events to provide opportunities for student performers.}
+      \resumeItem{Oversaw the management of the club, including recruitment, rehearsals, and scheduling of performances.}
+      \ItemListEnd
+  \ExpListSubEnd
+
+  
+  
+\ExpListEnd
+
+%-----------SKILLS-----------------
+\section{Programming Languages \& Software Skills}
+\ExpList
+\ExpItem{}{}{}{} 
+\vspace{-25pt}
+  \SkillsList
+    \SkillItemX{Proficient}
+      {MATLAB, Powerpoint, Excel, Inkscape, LaTeX, SolidWorks,LabVIEW, Ansys Fluent(CFD)}
+    \SkillItemX{Experienced}
+      {Adobe Illustrator, COMSOL, WordPress, Arduino, High-performance computing (HPC) environment}
+    \SkillItemX{Basic Knowledge}
+      {HTML, CSS, JavaScript, C, Assembly Language, Mathematica, G-code}
+  \SkillsListEnd
+\ExpListEnd
+\vspace{-20pt}
+%
+
+
+%-------------------------------------------
+\end{document}
