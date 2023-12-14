@@ -1,0 +1,368 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.8]{fdsymbol}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\definecolor{TuftsBlue}{RGB}{62, 142, 222}
+\definecolor{ImperialBlue}{RGB}{0, 62, 116}
+
+%-----------Sections-Formatting----------------- 
+\titleformat{\section}{\vspace{-8pt}\bf\scshape\raggedright\Large\color{TuftsBlue}
+}{}{0em}{}[\vspace{-3pt}\color{TuftsBlue}\titlerule\vspace{-5pt}]
+
+
+%-----------List-Bullit-definition----------------- 
+\renewcommand{\labelitemi}{$\smallblacksquare$}
+\renewcommand{\labelitemii}{$\smallblacksquare$}
+\renewcommand{\labelitemiii}{$\smallblacksquare$}
+
+
+%-----------Resume-Start----------------- 
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+{\Huge{\bf\scshape{HAOTIAN JIA}}} \vspace{5pt} \\
+{
+\href{tel:18577565263}{\faPhoneSquare~\underline{\smash{+1 857-756-5263}}}\quad
+{\href{mailto:haotian.jia@tufts.edu}{\faEnvelope~\underline{\smash{haotian.jia@tufts.edu}}}}\quad
+\href{https://www.linkedin.com/in/haotianjia}{\faLinkedin~\underline{\smash{{linkedIn}}}}\quad
+{\faBuilding~Medford, MA, 02155}}
+    \vspace{0pt}
+\end{center}
+
+
+%-----------SUMMARY-----------------
+
+\newcommand{\BeginSummaryList}{\begin{itemize}[leftmargin=0.05in]} 
+\newcommand{\EndSummaryList}{\end{itemize}\vspace{-8pt}}
+
+\newcommand{\Summary}[1]
+{\item\small\justifying{{\hspace{-3pt}#1\vspace{-6pt}}}}
+
+%----------------------------
+\BeginSummaryList
+% \Summary{Target position: thermal engineer}
+\Summary{Ph.D. candidate in Mechanical Engineering, specializing in Heat Transfer, Fluid Mechanics, and Mass Transfer, with strong analytical problem-solving skills and deep knowledge of fundamental physics.}
+\Summary{5+ years of research experience in Mechanical Design, Prototyping, Testing, Data Processing \& Visualization,proficient in English and Mandarin.}
+% \Summary{Skilled in report presentation, experienced in teamwork, effective collaboration, }
+% \Summary{English Communication Skills~|~}{Successfully delivered several presentations and collaborated with multi-disciplinary teams and industry partners in STTR (Small Business Technology Transfer) projects for early-stage research, development, and deployment initiatives.}     \SkillBullet{Heat Transfer and Fluid Flow Modeling | }{Expertise in conduction, forced convection, high Reynolds number flow, microfluidics, and thermal management for electronics. Experienced in modeling for heat sinks, heat pipes, fans, impinging jets, heat exchangers, etc.}
+
+\EndSummaryList
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+
+\newcommand{\BeginEduList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\EndEduList}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\EduRole}[4]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}}
+
+\newcommand{\EduRoleNoHead}[2]{
+  \vspace{-5pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-10pt}}
+%----------------------------
+
+\BeginEduList
+    \EduRole
+      {Tufts University}{Medford, MA}
+      {Ph.D. Mechanical Engineering \footnotesize{(GPA: 3.82/4.0)}}{Sep 2020 -- Present}
+    \EduRoleNoHead
+      {M.S.~ Mechanical Engineering}{Sep 2018 -- Present}
+    \EduRole
+      {Beijing Forestry University}{Beijing, China}
+      {B.S. Mechanical Design, Manufacturing, and Automation}{Sep 2014 -- Jun 2018}
+\EndEduList
+  
+%-----------EMPLOYMENT-----------------
+\section{Experience}
+
+\newcommand{\EmpList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\EmpListEnd}{\end{itemize}\vspace{0pt}}
+
+\newcommand{\RoleII}[4]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+%---------------------------
+
+\EmpList
+\RoleII
+{Department of Mechanical Engineering, Tufts University}{Medford, MA}
+{Research Assistant}{Sep 2019 -- Present}
+
+\RoleII
+{Department of Mathematics, Imperial College London}{London, UK}
+{Visiting Research Assistant, Global Research Assistant Program (GRAP)}{Jun 2022 -- Aug 2022}
+\EmpListEnd
+
+%-----------PROJECTS-----------------
+
+\newcommand{\ProjList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\ProjListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\ProjHead}[2]{ %Heading for Employment roll project 
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}&{\small{\textit{#2}}} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\ProjListII}{\begin{itemize}[leftmargin=0.15in]} 
+\newcommand{\ProjListIIEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\ProjBullet}[1]
+{\item\small\justifying{\vspace{-3pt}{\hspace{0pt}#1\vspace{0pt}}}}
+%---------------------------
+
+\section{Project}
+\ProjList
+\ProjHead{Ehanced Lubrication in Superhydrophobic Microchannels}{NSF award 2140033}
+      \ProjListII
+      \ProjBullet{Designed and fabricated a transverse grooved superhydrophobic microchannel using SU-8 Soft-lithography with PDMS in a class 1000 cleanroom (Tufts Microfab) and examined the flow-field using the micro-PIV technique.}
+      \ProjBullet{Improved the model of photo-surfactants seeded flow within microchannel by taking into account surface tension and verifying the photochemical behaviors of photo-surfactants under transitions between UV and Blue light.}
+      \ProjListIIEnd
+
+\ProjHead{Permeability measurement of aerogel}{NSF award 153060}
+      \ProjListII
+      \ProjBullet{Improved the existing direct permeability measurement technique for aerogel. Utilized Duhamel’s theorem, and developed a non-destructive inverse approach to measure aerogel permeability.}
+      \ProjBullet{Developed an experimental apparatus for precise aerogel permeability measurement under supercritical CO$_2$ flows, and several custom LabVIEW and MATLAB programs for data collection and post-processing.}  
+      \ProjListIIEnd
+
+\ProjHead{Jet-impingement enhanced freeze drying of aerogel}{NSF STTR Phase I award 2014881}
+      \ProjListII
+      \ProjBullet{Designed, constructed, and utilized a first-of-its-kind drying system demo using jet-impingement to optimize Aerogel Technologies, LLC.'s patented freeze-drying process, resulting in a 75\% reduction in production time.}
+      \ProjBullet{Developed a dehumidification process for compressed air to supply ultra-dry air to the jet stream. Achieved a dew point as low as -40°C while maintaining a high mass flow rate of up to 12.7 SCFM.}
+      \ProjListIIEnd
+      
+\ProjHead{Inertial Effects on the Flow Resistance of Axial Groove Heat Pipes}{}
+      \ProjListII
+      \ProjBullet{Modeled 2-phase flow inside heat pipe to capture the capillary limit of the heat pipe; Simplified and solved the governing PDEs employing asymptotic expansion techniques and utilizing MATLAB finite element method solvers. }
+      \ProjListIIEnd
+      
+\ProjHead{2 Degree-of-Freedom Planar Robot Arm Design \& Control}{}
+      \ProjListII
+      \ProjBullet{Customized a National Instruments myRIO using the LabVIEW FPGA Module to design and compare multiple control methods for a 2 degree-of-freedom rhombus shape planar robot arm.}
+      \ProjListIIEnd
+\ProjHead{Solution for Cerebral Palsy Patient to Eat Independently}{}
+      \ProjListII
+      \ProjBullet{Collaborated with patients and caregivers, design and fabricate a rotary food supply mechanism using LEGO and an Arduino-controlled stepper motor, while collaborating with teammates to deliver a preliminary solution.}
+      \ProjListIIEnd
+% \ProjHead{Website Development for Transport Phenomena Lab}{2022}
+%       \ProjListII
+%       \ProjBullet{Developed and currently maintain the research group site on WordPress, see \href{https://sites.tufts.edu/tplab/}{\underline{\smash{https://sites.tufts.edu/tplab}}} for reference.}
+%       \ProjListIIEnd
+      
+\ProjListEnd
+
+%-----------Relevant Courses-----------------
+\newcommand{\RCList}{\begin{itemize}[leftmargin=0in]} 
+\newcommand{\RCListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\RCBullet}[2]
+{\item[]\small{{#2 \vspace{-7.5pt}}}}
+
+
+\section{Graduate Level Courses}
+\RCList
+\RCBullet{}{Analytic Transport Phenomena~|~Applied Mathematics for Engineers~|~Assistive Design~|~Digital Control of Dynamic Systems~|~Fluid Mechanics~|~Heat Transfer~|~High Reynolds Number Flow~|~Inventive Design~|~Microfluidics~|~Numerical Analysis~|~Optics and Wave Motion~|~Simulation for Mechanical Engineer~|~Thermal Management of Electronics}
+
+\RCListEnd
+
+%-----------SKILLS-----------------
+\newcommand{\SkillList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\SkillListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\SkillBullet}[2]
+{\item[]\small{\textbf{#1}{#2 \vspace{-5pt}}}}
+
+\section{Skills}
+\SkillList    
+    \SkillBullet{Numerical Simulation \& Analysis: }{Ansys Fluent~|~ COMSOL~|~MATLAB PDE Toolbox~|~HPC environment}
+    \SkillBullet{Mechanical Design \& Manufacturing: }{SolidWorks~|~Solid Edge~|~AutoCAD~|~G-code~|~MasterCAM}
+    \SkillBullet{Data Acquisition: }{LabVIEW (NI-DAQ)~|~Arduino~|~micro-PIV}
+    \SkillBullet{Data Analysis \& visualization: }{Excel~|~Inkscape~|~Adobe Illustrator~|~PowerPoint~|~WordPress~|~Word~|~\LaTeX}
+\SkillListEnd
+
+% \section{Experimental Skills}
+% \SkillList    
+%     \SkillBullet{Prototyping: }{whssssssssssssssx x fsa dffasdf als}
+%     \SkillBullet{Testing: }{whssssssssssssssx x fsa dffasdf als}
+% \SkillListEnd
+
+      
+      % {MATLAB, LaTeX, SolidWorks, Inkscape, LabVIEW, Microsoft Office, Ansys Fluent(CFD)}
+    % \BulletII{Experienced}
+    %   {Adobe Illustrator, COMSOL, WordPress, Arduino, High-performance computing (HPC) environment}
+    % \BulletII{Basic Knowledge}
+    %   {HTML, CSS, JavaScript, C, Assembly Language, Mathematica, G-code}
+
+    
+%-----------EXPERIENCE-----------------
+
+\newcommand{\ExpList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\ExpListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\ExpSubList}{\begin{itemize}[leftmargin=0.25in]}
+\newcommand{\ExpSubListEnd}{\end{itemize}\vspace{-8pt}}
+
+
+\newcommand{\ExpRole}[4]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\LeaBullet}[1]
+{\item\small\justifying{{\hspace{0pt}#1\vspace{0pt}}}}
+
+%-----------Awards-----------------
+
+\newcommand{\AwardList}{\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\AwardListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\AwardHead}[4]{ %Heading for Employment roll project 
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}&{\small{\textit{#2}}} \\
+    \textit{#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-3pt}
+}
+
+%---------------------------
+
+\section{Awards}
+\AwardList
+\AwardHead{Dean’s Fellowship}{}
+{School of Engineering, Tufts University}{Jan 2024 - Jun 2024}
+\AwardHead{Global Research Assistant Program (GRAP) Award}{}
+{Global Tufts, Tufts University}{Jun 2022 - Aug 2022}
+\AwardListEnd
+
+\section{Leadership}
+\ExpList
+
+\ExpRole
+{PR Department, Association Federation of Beijing Forestry University}
+{Beijing, China}
+{Vice Minister}
+{Jul 2015 -- Sep 2016}
+  \ExpSubList
+  \LeaBullet{Represented the university and its students in a diverse range of events organized by other universities in the Beijing area, fostering collaboration and networking opportunities.}
+  \ExpSubListEnd
+  
+\ExpRole
+{LvFangCheng Electroacoustic Club, Art Troupe of Beijing Forestry University}
+{Beijing, China}
+{President}
+{Nov 2016 -- Nov 2017}
+    \ExpSubList
+    \LeaBullet{Oversaw the management of the club, including recruitment, and rehearsals. Coordinated with performance venues, and scheduled and organized several music events/ performances to provide opportunities for student performers.}
+    \ExpSubListEnd
+    
+    % \Role
+    % {APHASIA \small{(Post-rock Band, Non-professional)}}
+    % {Beijing, China}
+    % {Rhythm Guitar}
+    % {Nov 2015 -- May 2017}
+    
+\ExpListEnd
+
+
+
+%-----------Publications-----------------
+\section{Publications}
+
+\newcommand{\PubList}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\EndPubList}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\PubBullet}[2] % Bullet 
+{\item\small{{#1}{#2 \vspace{-7.5pt}}}}
+%----------------------------
+\PubList
+\PubBullet{Jia, H., Hodes, M., and  Kirk, T., "Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes." \textbf{In progress for submission} to the \textit{Journal of Fluid Mechanics}.}
+
+\PubBullet{Mayer, M., Jia, H., Adler, J., Hu, X., and Hodes, M., "Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels via Chromocapillarity." \textbf{In progress for submission} to the \textit{Journal of Fluid Mechanics}.}
+
+\PubBullet{Jia, H., Dinh, H., Hodes, M., Griffin, J., Mayer, M., Diorio, M., and Karamanis, G., "An Apparatus to Measure Permeability of Aerogels by Redundant Methods." \textbf{In progress for submission}.}
+
+\PubBullet{Jia, H., Karamanis, G., Abolorunke, F., Dinh, H., Griffin, J., and Hodes, M., "Jet-Impingement-Enhanced Ambient-Pressure Freeze Drying Of Aerogels." \textbf{In progress for submission}.}
+
+
+
+\EndPubList
+%-----------Conference Talks \& Presentations-----------------
+\section{Conference Talks \& Presentations}
+
+\newcommand{\TalkList}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\TalkListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\TalkBullet}[2]
+{\item\small{\textbf{#1}{#2 \vspace{-7.5pt}}}}
+
+\TalkList
+\TalkBullet{10th International Congress on
+Industrial and Applied Mathematics (2023)~|~}{Talk in Minisymposia titled \textit{"Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes"}}
+\TalkBullet{The Red Lotus Project~|~}{Presented a series of talks at video-conference events and mini-symposia to mathematicians at Imperial College London, promoting interdisciplinary collaboration in the field of surface engineering, with a focus on microfabrication and photochemistry applications.}
+\TalkBullet{Online Aerogel Seminar 2020~|~}{Presented talk titled \textit{"Permeability of Aerogels under Supercritical CO$_2$ Conditions"}}
+% \TalkBullet{Tufts International Center 2019 Workshop~|~}{Participated in panel discussion \textit{"Transitioning to Graduate School"} .}
+
+\TalkListEnd
+
+
+
+
+
+%-------------------------------------------
+\end{document}

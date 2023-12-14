@@ -47,7 +47,9 @@
 }{}{0em}{}[\vspace{-3pt}\color{TuftsBlue}\titlerule\vspace{-5pt}]
 
 %-----------Custom-Commands-definition----------------- 
-\newcommand{\RresumeRole}[4]{
+
+% Summary
+\newcommand{\SummaryRole}[4]{
   \vspace{0pt}\item[]
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -55,14 +57,30 @@
     \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\HeadingTypeI}[2]{
-  \vspace{-2pt}\item[]
+\newcommand{\NoHeadRole}[2]{
+  \vspace{-5pt}\item[]
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1}{\small{\textit{#2}}} \\
+    \textit{#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\HeadingTypeII}[3]{
+
+\newcommand{\RoleII}[4]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\HeadTypeI}[2]{ %Heading for Employment roll project 
+  \vspace{-2pt}\item[]
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}{\small{\textit{#2}}} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\HeadTypeII}[3]{
   \vspace{-2pt}\item[]
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1}&{\small{\textit{#2}}} \\
@@ -74,25 +92,31 @@
 \newcommand{\BulletTypeSummary}[1]
 {\item\small\justifying{{\hspace{-3pt}#1\vspace{-6pt}}}}
 
-\newcommand{\BulletTypeI}[1]
-{\item\small\justifying{{\hspace{-3pt}#1\vspace{-1pt}}}}
+\newcommand{\BulletI}[1]
+{\item\small\justifying{{\hspace{0pt}#1\vspace{-1pt}}}}
 
-\newcommand{\BulletTypeII}[2]
+\newcommand{\BulletII}[2]
 {\item\small{\justifying\textbf{#1}\justifying{:#2\vspace{-1pt}}}}
 
-\newcommand{\BulletTypeIII}[2]
+\newcommand{\BulletIII}[2]
 {\item\small{\textbf{#1}{#2 \vspace{-7.5pt}}}}
 
-\newcommand{\BulletTypeIV}[2]
+\newcommand{\BulletIV}[2] % Bullet 
 {\item\small{{#1}{#2 \vspace{-7.5pt}}}}
 
 %-----------List-Bullit-definition----------------- 
 \renewcommand{\labelitemi}{$\medblacksquare$}
 \renewcommand{\labelitemii}{$\smallblacksquare$}
+\renewcommand{\labelitemiii}{$\smallblacksquare$}
 
 %-----------List-Environment-definition----------------- 
 \newcommand{\BeginList}{\begin{itemize}[leftmargin=0.00in]}
 \newcommand{\EndList}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\BeginListII}{\begin{itemize}[leftmargin=0.15in]} 
+\newcommand{\EndListII}{\end{itemize}\vspace{-5pt}}
+%no hspace list
+
 \newcommand{\BeginSubList}{\begin{itemize}[leftmargin=0.25in]}
 \newcommand{\EndSubList}{\end{itemize}\vspace{-8pt}}
 
@@ -106,17 +130,16 @@
 {\Huge{\bf\scshape{HAOTIAN JIA}}} \vspace{5pt} \\
 {
 \href{tel:18577565263}{\faPhoneSquare~\underline{\smash{+1 857-756-5263}}}\quad
-{\href{mailto:haotian.jia@tufts.edu}\faEnvelope~\underline{\smash{haotian.jia@tufts.edu}}}\quad
-\href{https://www.linkedin.com/in/haotianjia}\faLinkedin~\underline{\smash{{linkedIn}}}\quad
-{\faBuilding~Medford, MA, 02155}
-}
+{\href{mailto:haotian.jia@tufts.edu}{\faEnvelope~\underline{\smash{haotian.jia@tufts.edu}}}}\quad
+\href{https://www.linkedin.com/in/haotianjia}{\faLinkedin~\underline{\smash{{linkedIn}}}}\quad
+{\faBuilding~Medford, MA, 02155}}
     \vspace{0pt}
 \end{center}
 
 
 %-----------SUMMARY-----------------
 \section{Summary}
-\BeginSubList
+\BeginListII
 % \BulletTypeSummary{Target position: thermal enginner}
 
 \BulletTypeSummary{PhD candidate in Mechanical Engineering with a focus on Heat Transfer, Fluid Mechanics, and Mass Transfer, expertise in analytical problem-solving with a profound understanding of the fundamental physics associated with these fields.}
@@ -125,19 +148,23 @@
 % in mechanical design, prototyping, and testing foe experimental resueasrch.}
 
 \BulletTypeSummary{Proficient in presenting reports and information; Experienced in working in team-based environments, collaborating effectively, and possessing strong communication skills in English and Mandarin. }
-\EndSubList
+
+% \BulletTypeSummary{Mechanical Design, Prototyping \& Testing Modeling, Simulation \& Theoretical Research}
+
+% \BulletIII{English Communication Skills~|~}{Successfully delivered several presentations and collaborated with multi-disciplinary teams and industry partners in STTR (Small Business Technology Transfer) projects for early-stage research, development, and deployment initiatives.}
+
+\EndListII
 
 
 %-----------EDUCATION-----------------
 \section{Education}
 \BeginList
-    \RresumeRole
+    \Role
       {Tufts University}{Medford, MA}
-      {PhD Candidate (6th year), Mechanical Engineering \footnotesize{(GPA: 3.82/4.0)}}{Sep 2020 -- Present}
-    \RresumeRole
-      {Tufts University}{Medford, MA}
+      {PhD Mechanical Engineering \footnotesize{(GPA: 3.82/4.0)}}{Sep 2020 -- Present}
+    \NoHeadRole
       {MS Mechanical Engineering}{Sep 2018 -- Present}
-    \RresumeRole
+    \Role
       {Beijing Forestry University}{Beijing, China}
       {BS Mechanical Design, Manufacturing, and Automation}{Sep 2014 -- Jun 2018}
 \EndList
@@ -146,149 +173,141 @@
 %-----------EMPLOYMENT-----------------
 \section{Employment}      
 \BeginList
-\RresumeRole
+\RoleII
 {Department of Mechanical Engineering, Tufts University}{Medford, MA}
 {Research Assistant}{Sep 2019 -- Present}
+\BeginListII
+\HeadTypeI{Permeability measurement of aerogel~|~}{funded by NSF award 153060}
+      \BeginList
+      \BulletI{Designed, constructed, and tested an experimental apparatus to precisely measure aerogel permeability through two independent methods. The apparatus utilized CO$_2$ under pressures up to 1850 PSI and temperatures of 50°C.}
 
-\RresumeRole
+      \BulletI{Improved the existing experimental method for direct permeability measurement and developed a non-destructive aerogel permeability testing method using Duhamel's theorem.}   
+      \BulletI{Developed several custom programs using LabVIEW and MATLAB for data collection and post-processing, respectively.}
+      % \BulletI{Developed a data acquisition and post-processing system using National Instruments LabVIEW and hardware.
+      \EndList
+
+\HeadTypeI{Jet-impingement enhanced freeze drying~|~}{funded by NSF STTR Phase I award 2014881}
+      \BeginList
+      \BulletI{Optimized Collaborator's (Aerogel Technologies, LLC.) patented aerogel freeze-drying process by designing, constructing, commissioning, and utilizing a first-of-its-kind drying system demo, resulting in a 75\% reduction in production time.}
+      \BulletI{Developed dehumidification process for compressed air flow, achieving a dew point as low as -40°C while maintaining a high mass flow rate of up to 12.7 SCFM.}
+      \EndList
+      
+\HeadTypeI{Microchannel fabrication~|~}{Funded by NSF award 2140033 (Ongoing)}
+      \BeginList
+      \BulletI{Designed and fabricated PDMS microchannel with complex sidewall geometry using the method of SU-8 Soft-lithography in Tufts Micro and Nano Fabrication Facility (class 1000 cleanroom). conducted several Preliminary Experiments using micro-PIV.}
+      % \BulletI{}
+      \EndList
+      
+\EndListII
+
+\RoleII
 {Department of Mathematics, Imperial College London}{London, UK}
 {Research Assistant, Global Research Assistant Program (GRAP)}{Jun 2022 -- Aug 2022}
-\EndList
-
-%-----------EXPERIENCE-----------------
-\section{Mechanical Design, Prototyping \& Testing}
-\BeginList
-\HeadingTypeI{Permeability measurement of aerogel~|~}{funded by NSF award 153060}
-      \BeginSubList
-      \BulletTypeI{Designed, constructed, and tested an experimental apparatus to precisely measure aerogel permeability through two independent methods. The apparatus utilized CO$_2$ under pressures up to 1850 PSI and temperatures of 50°C.}
-
-      \BulletTypeI{Improved the existing experimental method for direct permeability measurement and developed a non-destructive aerogel permeability testing method using Duhamel's theorem.}   
-      \BulletTypeI{Developed several custom programs using LabVIEW and MATLAB for data collection and post-processing, respectively.}
-      % \BulletTypeI{Developed a data acquisition and post-processing system using National Instruments LabVIEW and hardware.
-      \EndSubList
-      
-\HeadingTypeI{Jet-impingement enhanced freeze drying~|~}{funded by NSF STTR Phase I award 2014881}
-      \BeginSubList
-      \BulletTypeI{Optimized Collaborator's (Aerogel Technologies, LLC.) patented aerogel freeze-drying process by designing, constructing, commissioning, and utilizing a first-of-its-kind drying system demo, resulting in a 75\% reduction in production time.}
-      \BulletTypeI{Developed dehumidification process for compressed air flow, achieving a dew point as low as -40°C while maintaining a high mass flow rate of up to 12.7 SCFM.}
-      \EndSubList
-      
-\HeadingTypeI{Microchannel fabrication~|~}{Funded by NSF award 2140033 (Ongoing)}
-      \BeginSubList
-      \BulletTypeI{Designed and fabricated PDMS microchannel with complex sidewall geometry using the method of SU-8 Soft-lithography in Tufts Micro and Nano Fabrication Facility (class 1000 cleanroom). conducted several Preliminary Experiments using micro-PIV }
-      % \BulletTypeI{}
-      \EndSubList
-\EndList
-
-\section{Modeling, Simulation \& Theoretical Research}
-\BeginList
-
-% \HeadingTypeI{Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels}{}
-%       \BeginSubList
-%       \BulletTypeI{Improved the modeling of mass transfer for photo-surfactants seeded flow in a microchannel with a textured surface, surface tension and .}
-%       % \BulletTypeI{Verified the photo chemistry behaviousr of photo-surfactants underego UV and Blue light transitions.}
-%       \EndSubList
-      
-\HeadingTypeI{Inertial Effects on the Flow Resistance of Axial Groove Heat Pipes}{}
-     \BeginSubList
-      \BulletTypeI{Improved an 
+\BeginListII
+\HeadTypeI{Inertial Effects on the Flow Resistance of Axial Groove Heat Pipes}{}
+      \BeginList
+      \BulletI{Improved an 
       which simplifies a 3-dimensional 2-phase flow problem into 2D several 2D 
       Modeled and solved the partial differential equations governing 2-phase flow by employing asymptotic expansion techniques and}
       utilizing MATLAB finite element method solvers.
-      % \BulletTypeI{convergence rate}
-      \EndSubList
+      \EndList
 
-\HeadingTypeI{2 Degree-of-Freedom Planar Robot Arm Design \& Control}{}
+\HeadTypeI{Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels}{}
+      \BeginList
+      \BulletI{Improved the modeling of mass transfer for photo-surfactants seeded flow in a microchannel with a textured surface, surface tension and verified the photo chemistry behaviousr of photo-surfactants underego UV and Blue light transitions.}
+      \EndList
+\EndListII
+
+\EndList
+
+%-----------Relevant Courses-----------------
+\section{Relevant Courses}
+\BeginListII
+\BulletIII{Transport Phenomena~|~}{Fluid Mechanics, Thermal-fluid Transport, Microfluidics, heat transfer, High Reynolds Number Flow, Analytic Transport Phenomena, Thermal Management Of Electronics}
+\BulletIII{Numerical Modeling~|~}{Applied Mathematics for Engineers, Numerical Analysis, Simulation for Mechanical Engineer}
+\BulletIII{Transport Phenomena~|~}{Fluid Mechanics, Thermal-fluid Transport, Microfluidics, heat transfer, High Reynolds Number Flow, Analytic Transport Phenomena, Thermal Management Of Electronics}
+\BulletIII{Numerical Modeling~|~}{Applied Mathematics for Engineers, Numerical Analysis, Simulation for Mechanical Engineer}
+\EndListII
+
+%-----------PROJECTS-----------------
+
+\section{Project}
+\BeginList
+\HeadTypeI{2 Degree-of-Freedom Planar Robot Arm Design \& Control}{}
       \BeginSubList
-      \BulletTypeI{Customized a National Instruments myRIO using the LabVIEW FPGA Module to design and compare multiple control methods for a 2-degree-of-freedom planar robot arm.}
+      \BulletI{Customized a National Instruments myRIO using the LabVIEW FPGA Module to design and compare multiple control methods for a 2-degree-of-freedom planar robot arm.}
+      \EndSubList
+      
+\HeadTypeI{Solution for Cerebral Palsy Patient to Eat Independently}{}
+      \BeginSubList
+      \BulletI{Collaborated with patients and caregivers to design and fabricate a rotary food supply mechanism using LEGO and an Arduino-controlled stepper motor, while collaborating with teammates to deliver a preliminary solution.}
+      \EndSubList
+      
+\HeadTypeI{Website Development for Transport Phenomena Lab}{}
+      \BeginSubList
+      \BulletI{Developed and currently maintain the research group site on WordPress, see \href{https://sites.tufts.edu/tplab/}{\underline{\smash{https://sites.tufts.edu/tplab}}} for reference.}
       \EndSubList
 
 \EndList
 
-% %-----------PROJECTS-----------------
-% \section{Creative \& Design Experience}
-% \BeginList
-% \HeadingTypeI{Solution for Cerebral Palsy Patient to Eat Independently}{}
-%       \BeginSubList
-%       \BulletTypeI{Collaborated with patients and caregivers to design and fabricate a rotary food supply mechanism using LEGO and an Arduino-controlled stepper motor, while collaborating with teammates to deliver a preliminary solution.}
-%       \EndSubList
+
       
-% \HeadingTypeI{Website Development for Transport Phenomena Lab}{}
-%       \BeginSubList
-%       \BulletTypeI{Developed and currently maintain the research group site on WordPress, see \href{https://sites.tufts.edu/tplab/}{\underline{\smash{https://sites.tufts.edu/tplab}}} for reference.}
-%       \EndSubList
+
 
 % \EndList
 
 
 
-% \RresumeRole
-% {Mojito \small{(Non-professional Pop Band)}}
-% {Beijing, China}
-% {Rhythm Guitar}
-% {Nov 2014 -- Apr 2016}
-%-----------EXPERIENCE-----------------
-\section{Relevant Courses}
-\BeginList
-\BulletTypeIII{Transport Phenomena~|~}{Fluid Mechanics, Thermal-fluid Transport, Microfluidics, heat transfer, High Reynolds Number Flow, Analytic Transport Phenomena, Thermal Management Of Electronics}
-
-\BulletTypeIII{Numerical Modeling~|~}{Applied Mathematics for Engineers, Numerical Analysis, Simulation for Mechanical Engineer}
-
-\EndList
-
 %-----------SKILLS-----------------
 \section{Technical Skills}
 \BeginList    
     
-    \BulletTypeIII{Heat Transfer and Fluid Flow Modeling | }{Expertise in conduction, forced convection, , high Reynolds number flow. 
+    \BulletIII{Heat Transfer and Fluid Flow Modeling | }{Expertise in conduction, forced convection, high Reynolds number flow, microfluidics, and thermal management for electronics. Experienced in modeling for heat sinks, heat pipes, fans, impinging jets, heat exchangers, etc.}
+
+    \BulletIII{Numerical Modeling, Simulation \& Analysis | }{ Proficient in numerical analysis tools, applying Finite Element Method (FEM/FEA) and skilled in designing custom numerical solvers. Proficient using the \underline{\smash{MATLAB Partial Differential Equation Toolbox}}. Computational Fluid Dynamics, Proficient in using Computational Fluid Dynamics tools (\underline{\smash{Ansys Fluent}} and \underline{COMSOL})}
     
-    don microfluidics, thermal management for electronics. analytic tools  Experienced in modeling for heat sinks, heat pipes, fans, impinging jets, and heat exchangers, etc.}
+    \BulletIII{Mechanical Design \& Manufacturing | }{8+ years of experience utilizing 2D \& 3D CAD software (\underline{SolidWorks}, \underline{\smash{Solid Edge}}, \underline{AutoCAD}). Expertise in various manufacturing methods and experience in \underline{G-code} and \underline{MasterCAM} for CNC manufacturing.} % Computer Numerical Control (CNC) 
 
+    \BulletIII{Experimental Data Acquisition | }{Developed multiple test and measurement systems utilizing National Instrument hardware (\underline{\smash{NI-DAQ}}) within the \underline{LabVIEW} environment to collect and preprocess data. Expertise in measurement techniques for fluid flow (vortex, micro-PIV) and heat transfer with proficiency in error analysis.}
 
-    \BulletTypeIII{Numerical Modeling, Simulation \& Analysis | }{ Proficient in numerical analysis tools, applying Finite Element Method (FEM/FEA) and skilled in designing custom numerical solvers. Proficient using the \underline{\smash{MATLAB Partial Differential Equation Toolbox}}. Computational Fluid Dynamics, Proficient in using Computational Fluid Dynamics tools (\underline{\smash{Ansys Fluent}} and \underline{COMSOL})}
+    \BulletIII{Data Processing, \& analysis | }{5+ years of experience using using \underline{MATLAB} processing and visualizing scientific data, using \underline{Excel} and. Proficient in utilizing illustrative post-processing techniques to support project presentation via \underline{Inkscape} and \underline{PowerPoint} }
     
-    \BulletTypeIII{Mechanical Design \& Manufacturing | }{8+ years of experience utilizing 2D \& 3D CAD software (\underline{SolidWorks}, \underline{\smash{Solid Edge}}, \underline{AutoCAD}). Expertise in various manufacturing methods and experience in \underline{G-code} and \underline{MasterCAM} for CNC manufacturing.} % Computer Numerical Control (CNC) 
+    \BulletIII{Document Drafting \& Academic writing | }{Proficient in utilizing \underline{Microsoft Word} and \underline{LaTeX} for drafting project summaries, proposals, data management plans, and other documents related to scientific research.}
 
-    \BulletTypeIII{Experimental Data Acquisition | }{Developed multiple test and measurement systems utilizing National Instrument hardware (\underline{\smash{NI-DAQ}}) within the \underline{LabVIEW} environment to collect and preprocess data. Expertise in measurement techniques for fluid flow (vortex, micro-PIV) and heat transfer with proficiency in error analysis.}
 
-    \BulletTypeIII{Data Processing, \& analysis | }{5+ years of experience using using \underline{MATLAB} processing and visualizing scientific data, using \underline{Excel} and. Proficient in utilizing illustrative post-processing techniques to support project presentation via \underline{Inkscape} and \underline{PowerPoint} }
-    
-    \BulletTypeIII{Document Drafting \& Academic writing | }{Proficient in utilizing \underline{Microsoft Word} and \underline{LaTeX} for drafting project summaries, proposals, data management plans, and other documents related to scientific research.}
-
-    \BulletTypeIII{English Communication Skills~|~}{Successfully delivered several presentations and collaborated with multi-disciplinary teams and industry partners in STTR (Small Business Technology Transfer) projects for early-stage research, development, and deployment initiatives.}
 
 \EndList
 
       
       % {MATLAB, LaTeX, SolidWorks, Inkscape, LabVIEW, Microsoft Office, Ansys Fluent(CFD)}
-    % \BulletTypeIII{Experienced}
+    % \BulletIII{Experienced}
     %   {Adobe Illustrator, COMSOL, WordPress, Arduino, High-performance computing (HPC) environment}
-    % \BulletTypeIII{Basic Knowledge}
+    % \BulletIII{Basic Knowledge}
     %   {HTML, CSS, JavaScript, C, Assembly Language, Mathematica, G-code}
 %-----------EXPERIENCE-----------------
 \section{Leadership \& Collaboration Experience}
 \BeginList
 
-\RresumeRole
+\Role
 {PR Department, Association Federation of Beijing Forestry University}
 {Beijing, China}
 {Vice Minister}
 {Jul 2015 -- Sep 2016}
   \BeginSubList
-  \BulletTypeI{Represented the university and its students in a diverse range of events organized by other universities in the Beijing area, fostering collaboration and networking opportunities.}
+  \BulletI{Represented the university and its students in a diverse range of events organized by other universities in the Beijing area, fostering collaboration and networking opportunities.}
   \EndSubList
   
-\RresumeRole
+\Role
 {LvFangCheng Electroacoustic Club, Art Troupe of Beijing Forestry University}
 {Beijing, China}
 {President}
 {Nov 2016 -- Nov 2017}
     \BeginSubList
-    \BulletTypeI{Coordinated with performance venues, organized several music events to provide opportunities for student performers.}
-    \BulletTypeI{Oversaw the management of the club, including recruitment, rehearsals, and scheduling of performances.}
+    \BulletI{Coordinated with performance venues, organized several music events to provide opportunities for student performers.}
+    \BulletI{Oversaw the management of the club, including recruitment, rehearsals, and scheduling of performances.}
     \EndSubList
     
-% \RresumeRole
+% \Role
 % {APHASIA \small{(Post-rock Band, Non-professional)}}
 % {Beijing, China}
 % {Rhythm Guitar}
@@ -300,27 +319,27 @@
 %-----------EXPERIENCE-----------------
 \section{Publications}
 \BeginList
-\BulletTypeIV{Jia, H., Hodes, M., and  Kirk, T., "Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes." In progress for submission to the \textit{Journal of Fluid Mechanics}.}
+\BulletIV{Jia, H., Hodes, M., and  Kirk, T., "Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes." In progress for submission to the \textit{Journal of Fluid Mechanics}.}
 
-\BulletTypeIV{Mayer, M., Jia, H., Adler, J., Hu, X., and Hodes, M., "Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels via Chromocapillarity." In progress for submission to the \textit{Journal of Fluid Mechanics}.}
+\BulletIV{Mayer, M., Jia, H., Adler, J., Hu, X., and Hodes, M., "Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels via Chromocapillarity." In progress for submission to the \textit{Journal of Fluid Mechanics}.}
 
-\BulletTypeIV{Jia, H., Dinh, H., Hodes, M., Griffin, J., Mayer, M., Diorio, M., and Karamanis, G., "An Apparatus to Measure Permeability of Aerogels by Redundant Methods." In progress for submission.}
+\BulletIV{Jia, H., Dinh, H., Hodes, M., Griffin, J., Mayer, M., Diorio, M., and Karamanis, G., "An Apparatus to Measure Permeability of Aerogels by Redundant Methods." In progress for submission.}
 
-\BulletTypeIV{Jia, H., Karamanis, G., Abolorunke, F., Dinh, H., Griffin, J., and Hodes, M., "Jet-Impingement-Enhanced Ambient-Pressure Freeze Drying Of Aerogels." In progress for submission.}
+\BulletIV{Jia, H., Karamanis, G., Abolorunke, F., Dinh, H., Griffin, J., and Hodes, M., "Jet-Impingement-Enhanced Ambient-Pressure Freeze Drying Of Aerogels." In progress for submission.}
 
 
 \EndList
 %-----------EXPERIENCE-----------------
 \section{Conference Talks \& Presentations}
 \BeginList
-\BulletTypeIII{10th International Congress on
+\BulletIII{10th International Congress on
 Industrial and Applied Mathematics (2023)~|~}{Presented a minisymposia talk titled \textit{"Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes"}}
 
-\BulletTypeIII{The Red Lotus Project~|~}{Presented a series of talks at video-conference events and mini-symposia to mathematicians at Imperial College London, promoting interdisciplinary collaboration in the field of surface engineering, with a focus on microfabrication and photochemistry applications.}
+\BulletIII{The Red Lotus Project~|~}{Presented a series of talks at video-conference events and mini-symposia to mathematicians at Imperial College London, promoting interdisciplinary collaboration in the field of surface engineering, with a focus on microfabrication and photochemistry applications.}
 
-\BulletTypeIII{Online Aerogel Seminar 2020~|~}{Presented a talk titled \textit{"Permeability of Aerogels under Supercritical CO$_2$ Conditions"}}
+\BulletIII{Online Aerogel Seminar 2020~|~}{Presented a talk titled \textit{"Permeability of Aerogels under Supercritical CO$_2$ Conditions"}}
 
-\BulletTypeIII{Tufts International Center 2019 Workshop~|~}{Participated in \textit{"Transitioning to Graduate School"}, a panel discussion.}
+\BulletIII{Tufts International Center 2019 Workshop~|~}{Participated in \textit{"Transitioning to Graduate School"}, a panel discussion.}
 
 \EndList
 
