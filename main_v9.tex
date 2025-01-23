@@ -1,0 +1,299 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.8]{fdsymbol}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\definecolor{TuftsBlue}{RGB}{62, 142, 222}
+\definecolor{ImperialBlue}{RGB}{0, 62, 116}
+
+%-----------Sections-Formatting----------------- 
+\titleformat{\section}{\vspace{-6pt}\bf\scshape\raggedright\Large\color{gray}
+}{}{0em}{}[\vspace{-3pt}                   \color{gray}
+\titlerule\vspace{-5pt}]
+
+
+%-----------Lablel Marker Definition----------------- 
+\renewcommand{\labelitemi}{$\smallblacksquare$}
+\renewcommand{\labelitemii}{$\smallblacksquare$}
+% \renewcommand{\labelitemiii}{$\smallblacksquare$}
+
+%-----------List Commanddefinition----------------- 
+
+\newcommand{\BeginListI}{\vspace{0pt}\begin{itemize}[leftmargin=0.00in]}
+\newcommand{\EndListI}{\end{itemize}\vspace{-20pt}}
+
+\newcommand{\BeginListII}{\vspace{-7.5pt}\begin{itemize}[leftmargin=12.5pt]}
+\newcommand{\EndListII}{\end{itemize}\vspace{-7.5pt}}
+
+\newcommand{\BeginListIII}{\vspace{0pt}\begin{itemize}[leftmargin=12.5pt]} 
+\newcommand{\EndListIII}{\end{itemize}\vspace{0pt}}
+
+\newcommand{\BeginCmpctListI}{\vspace{0pt}\begin{itemize}[leftmargin=0pt,noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]} 
+\newcommand{\EndCmpctListI}{\end{itemize}\vspace{-7.5pt}}
+
+
+
+% Head Definition--------------------------------------------------------
+\newcommand{\HeadSingleLine}[2]{ %Heading for Employment roll project 
+  \vspace{0pt}\item
+    \begin{tabular*}{1\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    {#1} & {\small #2} \\
+    \end{tabular*}\vspace{0pt}}
+
+\newcommand{\HeadDoubleLine}[4]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    {#1} & {\small #2} \\
+    {#3} & {\small #4} \\
+    \end{tabular*}\vspace{0pt}}
+
+\newcommand{\HeadTripleLine}[6]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{1\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    {#1} & {\small #2} \\
+    {#3} & {\small #4} \\
+    {#5} & {\small #6} \\
+    \end{tabular*}\vspace{0pt}}
+
+
+% Bullit Definition-------------------------------------------------------
+\newcommand{\BullitZero}[1]{\item\small\justifying{#1}}
+
+\newcommand{\BullitZeroNOMARKER}[1]{\item[]\small\justifying{#1}}
+
+\newcommand{\BullitTwo}[2]{\item\small\justifying{#1}\\{#2}}
+
+
+% \newcommand{\ProjBullet}[1]
+% {\item\small\justifying{\vspace{-3pt}{\hspace{0pt}#1\vspace{0pt}}}}
+
+    
+
+% Resume-Start-------------------------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+{\huge{\bf\scshape{H\,A\,O\,T\,I\,A\,N~~J\,I\,A}}} \vspace{5pt} \\
+{\color{darkgray}\href{tel:18577565263}{\faPhoneSquare~\underline{\smash{857-756-5263}}}\quad\quad
+{\color{darkgray}\href{mailto:haotian.jia@tufts.edu}{\color{darkgray}\faEnvelope~\underline{\smash{haotian.jia@tufts.edu}}}}\quad\quad
+\href{https://www.linkedin.com/in/haotianjia}{\color{darkgray}\faLinkedin~\underline{\smash{{linkedIn}}}}\quad\quad
+{\faBuilding~Medford, MA, 02155}    }
+    \vspace{0pt}
+\end{center}
+
+
+
+
+
+% \section{Summary} ---------------------------------------------------------
+
+% \BeginListI 
+
+% \BullitZero{Ph.D. candidate in Mechanical Engineering specializing in fluid mechanics \& heat transfer, with extensive experience in design of experiments, testing \& lab equipment, data acquisition, and precise thermal \& fluid measurements.}
+
+% \BullitZero{Expert in thermal-fluid systems (heat pipes, cold plates, microchannels, porous media, etc.) with strong applied math skills and a deep understanding of fundamental physics for reduced-order and numerical modeling using CFD and FEM solvers.}
+
+% \BullitZero{Experienced in designing and building custom test platforms with integrated data acquisition for experimental validation, familiar with thermal technologies like heat pipes, cold plates, heat sinks, and conduction/convection applications.}
+ 
+% \EndListI
+
+% -------------------------------------------------------------------------
+\section{Experience}  
+
+\BeginListI
+
+\HeadDoubleLine
+{\textbf{Nokia Bell Labs}, Optical Systems and Device Research Lab}{Murray Hill, NJ}
+{Thermal Management Research Co-op}{May 2024 -- Aug 2024}
+
+    \BeginListII
+    
+    \BullitTwo{\textbf{Data Center Thermal Management} {\scriptsize(funded by ARPA-E COOLERCHIPS)}}
+    {Characterized the thermal behavior and fluid dynamics of two-phase cold plates using a pump-driven cooling test system, developed LabVIEW code for system steady-state detection, and standardized test operation procedures, reducing test time per data point by 25\%. Post-processed data using Python to generate plots that served as control parameters for a state-of-the-art AI data center Thermal Testing Vehicle. Created schematics and data visualizations, was selected to present findings to the entire Nokia Bell Labs, and contributed to a journal publication.} %Nokia Bell Labs %using a custom pump-driven cooling test system,}
+            
+    \EndListII
+
+\HeadDoubleLine
+{\textbf{Imperial College London}, Department of Mathematics}{London, UK}
+{Awarded Visiting Research Assistant}{Jun 2022 -- Aug 2022}
+
+    \BeginListII
+    
+    \BullitTwo{\textbf{Microchannel Flow Lubrication Enhancement} {\scriptsize (funded by NSF award 2140033)}}
+    {Designed superhydrophobic microchannels, fabricated it in cleanroom and conducted micro-PIV flow analysis using MATLAB, reproducing literature results. Investigated photoisomerization and adsorption kinetics of a shape-changing photo-surfactant to determine optimal surface tension isotherms under varying light profiles.}
+
+    \EndListII
+
+\HeadDoubleLine
+{\textbf{Tufts University}, Department of Mechanical Engineering}{Medford, MA}
+{Research Assistant}{Sep 2019 ~--~ Present}
+
+    \BeginListII
+      
+    \BullitTwo{\textbf{Internal Flow Modeling of Heat Pipe}}
+    {Reduced-order modeling of two-phase flow in the adiabatic sections of axial-grooved heat pipes with varying liquid-vapor interface shapes using advanced applied mathematics techniques. Developed a numerical solver using MATLAB PDE Toolbox to compute the heat pipe's flow field and capillary limits.} %Part of Ph.D. Thesis
+
+
+    
+    \BullitTwo{\textbf{Aerogel Permeability Measurement under Supercritical CO$_2$ Flows} {\scriptsize(funded by NSF award 1530603)}}
+    {Developed an experimental apparatus and measured aerogel permeability under supercritical CO$_2$ flows. Wrote complete LabVIEW and MATLAB programs for data acquisition and post-processing. Invented an inverse experimental approach using Duhamel's theorem to eliminate the sample sealing requirement in conventional methods.}       
+
+
+    \BullitTwo{\textbf{Jet-impingement Enhanced Aerogel freeze drying} {\scriptsize (funded by NSF STTR award 2014881)}}
+    {Design, build, and optimize a jet-impingement drying system with integrated data acquisition and control. Collaborated with Aerogel Technologies, LLC., reduce freeze-drying aerogel production process time by 75\%. Developed dehumidification process enabling the supply of ultra-dry compressed air with -40°C dew point at 12.7 SCFM to impinging jet stream.}    
+
+    % \HeadSingleLine{Website Development for Research Group}{~~}
+        
+    %     \BeginListIII        
+    %     \BullitZero{Designed and maintained Transport Phenomena Lab website on WordPress, see \href{https://sites.tufts.edu/tplab/}{\underline{\smash{https://sites.tufts.edu/tplab}}} for reference.}        
+    %     \EndListIII
+        
+    \EndListII
+
+\EndListI
+
+% -------------------------------------------------------------------------
+\section{Education} 
+
+\BeginListI
+
+\HeadTripleLine
+{\textbf{Tufts University}}{Medford, MA}
+{Ph.D. Mechanical Engineering {\scriptsize(GPA: 3.82/4.0)}}{Sep 2020 ~-- ~Present}
+{M.S.~ Mechanical Engineering}{Sep 2018 ~--~ Present}
+      
+\HeadDoubleLine
+{\textbf{Beijing Forestry University}}{Beijing, China}
+{B.E.~ Mechanical Design, Manufacturing, and Automation}{Sep 2014 -- Jun 2018}
+      
+\EndListI
+
+
+% -------------------------------------------------------------------------
+\section{Skills} 
+
+\BeginCmpctListI    
+
+    \BullitZeroNOMARKER{\textbf{Programming language:}~MATLAB,~\LaTeX,~Python,~LabVIEW,~Arduino,~C,~HTML,~HPC environment~}
+    
+    \BullitZeroNOMARKER{\textbf{CFD/FEM Software:}~Ansys Fluent, Ansys Workbench, MATLAB PDE Toolbox,COMSOL, SolidWorks Simulation}
+    
+    \BullitZeroNOMARKER{\textbf{CAD Software:}~SolidWorks, Inkscape, Adobe Illustrator, AutoCAD, Mastercam, G-code}
+
+    % \SkillBullet{Language:~}  {English (proficient),~Chinese (native),~Japanese (entry level)~}
+    
+\EndCmpctListI
+
+
+
+
+
+% -------------------------------------------------------------------------
+\section{Graduate Level Courses} 
+
+\BeginCmpctListI    
+
+\BullitZeroNOMARKER{\textbf{Fluid Mechanics \& Heat Transfer:}~Thermal Fluid Transport I \& II, High Reynolds Number Flow, Microfluidics, Thermal Management of Electronics, Analytic Transport Phenomena, Thermal Fluid Systems II (TA)}
+
+
+\BullitZeroNOMARKER{\textbf{Math \& Simulation:}~Numerical Analysis, Applied Mathematics for Engineers, Simulation for Mechanical Engineer}
+
+
+\BullitZeroNOMARKER{\textbf{Design, Ctrl \& Optics:}~Inventive Design, Assistive Design, Digital Control of Dynamic Systems, Optics \& Wave Motion}
+
+\EndCmpctListI
+
+
+% -------------------------------------------------------------------------
+\newpage
+% -------------------------------------------------------------------------
+
+
+% -------------------------------------------------------------------------
+\section{Publications} %---------------------------------------------------
+
+\BeginListIII
+
+\BullitZero{\textbf{Jia, H.}, Karamanis, G., Dinh, H., Diorio, M., Mayer, M., and Hodes, M., "Dual Apparatuses and Methods to Measure Permeability of Nanoporous Aerogels." \textbf{In progress for submission} to \textit{Review of Scientific Instruments}.}
+
+% \PubBullet{Apigo, D., Parbat, S., \textbf{Jia, H.}, Qiu, H., Kabirzadeh, P., Manohar, B., Faisal, S., Roy, R., Miljkovic, N., and Salamon, T., "Experimental characterization of a low thermal resistance microchannel evaporator utilizing low GWP refrigerant for high power GPU applications." \textbf{In progress for submission} to the \textit{24th Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems}.}
+
+\BullitZero{Apigo, D., Parbat, S., \textbf{Jia, H.}, Roy, R., Bongarala, M., Faisal, S., Qiu, H., Kabirzadeh, P., Miljkovic, N., and Salamon, T., "Thermofluidic design and characterization of microchannel evaporators in a two-phase low global warming potential refrigerant pump loop." \textbf{In progress for submission} to the \textit{Applied Thermal Engineering.}}
+
+\BullitZero{Hodes, M., Daetz, A., \textbf{Jia, H.}, and  Kirk, T., "Adiabatic-section flow resistance of axial-groove heat pipes for slowly-varying meniscus curvature." \textbf{In progress for submission} to the \textit{Journal of Fluid Mechanics}.}
+
+% \BullitZero{Mayer, M., Jia, H., Adler, J., Hu, X., and Hodes, M., "Enhanced Lubrication and Pumping of Flow in Superhydrophobic Microchannels via Chromocapillarity." \textbf{In progress for submission} to the \textit{Journal of Fluid Mechanics}.}
+
+
+%% \BullitZero{Jia, H., Karamanis, G., Abolorunke, F., Dinh, H., Griffin, J., and Hodes, M., "Jet-Impingement-Enhanced Ambient-Pressure Freeze Drying Of Aerogels." \textbf{In progress for submission}.}
+
+\EndListIII
+
+% -------------------------------------------------------------------------
+\section{Conference Talks \& Presentations}
+
+\BeginListIII
+
+\BullitZero{\textbf{10th International Congress on
+Industrial and Applied Mathematics (ICIAM 2023)} Talk in Minisymposia titled \textit{"Inertial Effects on the Adiabatic-Section Flow Resistance of Axial Groove Heat Pipes"}}
+
+\BullitZero{\textbf{The Red Lotus Project} Presented a series of talks at video-conference events and mini-symposia to mathematicians at Imperial College London, promoting interdisciplinary collaboration in the field of surface engineering, with a focus on microfabrication and photochemistry applications.}
+
+\BullitZero{\textbf{Online Aerogel Seminar 2020} Presented talk titled \textit{"Permeability of Aerogels under Supercritical CO$_2$ Conditions"}}
+
+
+\EndListIII
+
+% -------------------------------------------------------------------------
+\section{Awards}
+
+\BeginListI
+
+\HeadDoubleLine{\textbf{Outstanding Innovation Award}}{}
+{Nokia Bell Labs, Global Student Program 2024}{Aug 2024}
+
+\HeadDoubleLine{\textbf{Dean’s Fellowship}}{}
+{Tufts University, School of Engineering}{Jan 2024 - Jun 2024}
+
+\HeadDoubleLine{\textbf{Global Research Assistant Program Award (GRAP)}}{}
+{Tufts University, Global Tufts}{Jun 2022}
+\EndListI
+
+
+\end{document}
